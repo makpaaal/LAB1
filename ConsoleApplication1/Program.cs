@@ -14,6 +14,11 @@ namespace Complex
             this.a = a;
             this.b = b;
         }
+        public static Complex operator +(Complex first, Complex second)
+        {
+            Complex third = new Complex(first.a + second.a, first.b + second.b);
+                return third;
+        }
     }
 }
 
