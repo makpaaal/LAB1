@@ -4,30 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace Complex
 {
-    class Program
+    class Complex
     {
-        static void Main(string[] args)
+        public int a, b;
+        public Complex(int a, int b)
         {
-            int n;
-            n = int.Parse(Console.ReadLine());
-
-            {
-                for (int i = 2; i < n; i++)
-                {
-                    if (n % i == 0)
-                    {
-                        Console.WriteLine("This number is not prime");
-                        Console.ReadKey();
-
-                    }
-                    {
-                        Console.WriteLine("This number is prime");
-                        Console.ReadKey();
-                    }
-                }
-            }
+            this.a = a;
+            this.b = b;
         }
     }
 }
+
+ 
